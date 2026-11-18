@@ -1,0 +1,10 @@
+[project]
+name = "rq4-experiment"
+version = "0.1.0"
+description = "RQ4 experiment for assessing ENVRI knowledge-base chatbot answers"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

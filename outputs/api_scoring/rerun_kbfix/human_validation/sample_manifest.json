@@ -1,0 +1,8 @@
+{
+  "seed": 20261116,
+  "sampling": "Python random.Random; 10 answers per model; unique questions; final shuffle",
+  "source": "outputs/api_scoring/rerun_kbfix/final/all_answers_and_scores_v4.xlsx",
+  "sample_size": 40,
+  "per_model": 10,
+  "unique_questions": 40
+}

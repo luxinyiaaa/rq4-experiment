@@ -1,0 +1,38 @@
+# Names below are provider API identifiers; role descriptions live in CLAUDE.md.
+teacher:
+  model: "openai/gpt-6-sol"
+  base_url: "https://openrouter.ai/api/v1"
+  api_key_env: "OPENROUTER_API_KEY"
+  thinking_mode: "off"
+  thinking_parameters:
+    reasoning:
+      effort: "none"
+generator:
+  model: "deepseek-flash"
+  base_url: "https://api.deepseek.com"
+  api_key_env: "DEEPSEEK_API_KEY"
+  thinking_mode: "on"
+  # DeepSeek Flash defaults to thinking mode; omit an override to preserve the request/cache behavior.
+  thinking_parameters: {}
+judge:
+  model: "qwen3.7-plus"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  api_key_env: "QWEN_API_KEY"
+  thinking_mode: "off"
+  thinking_parameters:
+    enable_thinking: false
+judge_primary:
+  model: "openai/gpt-6-sol"
+  base_url: "https://openrouter.ai/api/v1"
+  api_key_env: "OPENROUTER_API_KEY"
+  thinking_mode: "off"
+  thinking_parameters:
+    reasoning:
+      effort: "none"
+judge_secondary:
+  model: "qwen3.7-plus"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  api_key_env: "QWEN_API_KEY"
+  thinking_mode: "off"
+  thinking_parameters:
+    enable_thinking: false

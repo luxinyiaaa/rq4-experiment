@@ -1,0 +1,43 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Large raw input currently at project root and future raw-data location
+/site_pages_rows.csv
+data/raw/
+/data/
+/outputs/*
+!/outputs/api_scoring/
+/outputs/api_scoring/*
+!/outputs/api_scoring/full/
+!/outputs/api_scoring/pilot_v2/
+!/outputs/api_scoring/rerun_kbfix/
+/outputs/api_scoring/full/*
+!/outputs/api_scoring/full/*.py
+/outputs/api_scoring/pilot_v2/*
+!/outputs/api_scoring/pilot_v2/*.py
+/outputs/api_scoring/rerun_kbfix/*
+!/outputs/api_scoring/rerun_kbfix/*.py
+!/outputs/api_scoring/rerun_kbfix/*.mjs
+!/outputs/api_scoring/rerun_kbfix/human_validation/
+/outputs/api_scoring/rerun_kbfix/human_validation/*
+!/outputs/api_scoring/rerun_kbfix/human_validation/*.py
+!/outputs/api_scoring/rerun_kbfix/human_validation/*.mjs
+
+# Derived LLM cache
+outputs/cache/
+
+# Local Python environment and bootstrap/cache tools
+.venv/
+.uv-bootstrap/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+/CLAUDE.md
